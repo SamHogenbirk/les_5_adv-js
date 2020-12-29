@@ -74,4 +74,5 @@ const combineArrays = () => array6.concat(array7);
 
 console.log(combineArrays())
 
+//-------------------
 
