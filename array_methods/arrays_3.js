@@ -135,12 +135,12 @@ console.log(superheroes.filter((item) => item.publisher === "Marvel Comics").map
 //print total weight of DC heroes
 const totalWeightDC = superheroes.filter((item) => item.publisher === "DC Comics").map((item) => {
 
-    let result = parseInt(item.weight)
+    let result = parseInt(item.weight);
     return result
 
-}).reduce((currenttotal, item) => item + currenttotal, 0)
+}).reduce((currenttotal, item) => item + currenttotal, 0);
 
-console.log(totalWeightDC)
+console.log(totalWeightDC);
 
 //-----------------
 
@@ -148,22 +148,15 @@ console.log(totalWeightDC)
 const totalWeightMarvel = superheroes.filter((item) => {
 
     return item.publisher === "Marvel Comics"
-
 }).map((item) => {
-
-    return parseInt(item.weight)
-
+    return parseInt(item.weight);
 }).filter((item) => {
-
-    return item === item
-
+    return item == item
 }).reduce((current, item) => {
-
     return item + current
-
 }, 0);
 
-console.log(totalWeightMarvel)
+console.log(totalWeightMarvel);
 
 //-----------------
 
@@ -171,6 +164,7 @@ console.log(totalWeightMarvel)
 const heavieHero = superheroes.map((item) => parseInt(item.weight)).filter((item) => item == item).reduce((currentNumber, item) => {
 
     return Math.max(currentNumber, item);
-}, 0)
+
+}, 0);
 
 console.log(heavieHero);
