@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.grid-container {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (200px)[6];
+      grid-template-columns: repeat(6, 200px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.grid-item {
+  padding: 7px;
+}
+
+.grid-item:hover {
+  padding-top: 3px;
+}
+
+.grid-image {
+  height: 250px;
+  max-width: 168px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-title {
+  color: goldenrod;
+}
+
+.flex-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: goldenrod;
+  padding: 10px;
+  gap: 7px;
+}
+
+.flex-search {
+  height: 25px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */
